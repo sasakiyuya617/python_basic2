@@ -18,11 +18,14 @@ def main():
 
     # Q2. 大阪府のすべての駅名をカンマ区切りで出力してください( '梅田,大阪,堺' となればOK)
     osaka_station = [info["station"] for info in weather_information if info["prefecture"] == "大阪府"]
-    print(",".join(osaka_station)) 
+    print(",".join(osaka_station))
 
     # Q3. 福岡県の平均気温を計算してください(14.0となればOK)
     hukuoka_temperature = [info["temperature"] for info in weather_information if info["prefecture"] == "福岡県"]
     print(sum(hukuoka_temperature) / len(hukuoka_temperature))
 
+
 if __name__ == '__main__':
     main()
+
+
